@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Case Study – Julie Jancickova</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html" class="logo">Julie Jancickova</a>
+        <ul class="nav-menu">
+            <li><a href="ux-projects.html">UX</a></li>
+            <li><a href="unity-projects.html">Unity</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+    </nav>
+
+    <!-- Narrative Hero -->
+    <section class="project-hero-narrative">
+        <div class="project-container">
+            <p class="project-meta">Interactive Installation · Unity · 2023</p>
+            <h1 class="project-title-narrative">Echoes of Connection</h1>
+        </div>
+    </section>
+
+    <!-- Opening Statement -->
+    <section class="project-section">
+        <div class="project-container-narrow">
+            <p class="lead-text-xl">
+                What happens when we translate human connection into physical space? Echoes of Connection is an interactive installation that visualizes social relationships through light, sound, and motion — transforming abstract data into tangible emotional experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- Full-Width Visual Break -->
+    <section class="full-width-visual">
+        <div class="image-placeholder" style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); height:70vh;">
+            <span>Installation Overview</span>
+        </div>
+    </section>
+
+    <!-- The Story - Context -->
+    <section class="project-section project-bg-light">
+        <div class="project-container-narrow">
+            <h2>The Story</h2>
+            <p>
+                In an age of digital connection, we paradoxically feel more isolated. This installation emerged from research into how people perceive and value their social networks. Through interviews with 30 participants, I discovered a common thread: people struggled to visualize the true depth and breadth of their relationships.
+            </p>
+            <p>
+                The installation invites visitors to physically map their social network by placing objects in space. As they build their network, the system responds with light patterns, spatial audio, and subtle environmental changes — creating a living representation of human connection.
+            </p>
+        </div>
+    </section>
+
+    <!-- Dual Image Section -->
+    <section class="project-section">
+        <div class="project-container-wide">
+            <div class="dual-image-layout">
+                <div class="dual-image-item">
+                    <div class="image-placeholder" style="background:linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height:500px;">
+                        <span>User Interaction</span>
+                    </div>
+                </div>
+                <div class="dual-image-item">
+                    <div class="image-placeholder" style="background:linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height:500px;">
+                        <span>Light Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="project-section project-bg-light">
+        <div class="project-container">
+            <div class="challenge-solution-layout">
+                <div class="challenge-col">
+                    <h2>The Challenge</h2>
+                    <p>How do you make abstract social data emotionally resonant? The project required balancing technical precision with artistic expression, ensuring the installation was both scientifically meaningful and aesthetically compelling.</p>
+                    <p>Key constraints:</p>
+                    <ul>
+                        <li>Real-time position tracking for 20+ simultaneous objects</li>
+                        <li>Seamless integration of physical and digital elements</li>
+                        <li>Intuitive interaction requiring no instruction</li>
+                        <li>Installation runtime of 8+ hours without system reboot</li>
+                        <li>Scalable architecture for varying exhibition spaces</li>
+                    </ul>
+                </div>
+                <div class="solution-col">
+                    <h2>The Solution</h2>
+                    <p>Built a custom Unity application using computer vision for object tracking, integrated with DMX lighting control and spatial audio systems. Developed proprietary algorithm translating network topology into visual patterns.</p>
+                    <p>Technical approach:</p>
+                    <ul>
+                        <li>OpenCV-based blob tracking for physical object detection</li>
+                        <li>Graph theory algorithms for network analysis</li>
+                        <li>Particle system for light visualization</li>
+                        <li>FMOD for procedural spatial audio generation</li>
+                        <li>Modular scene management for installation flexibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process - Narrative Flow -->
+    <section class="project-section">
+        <div class="project-container-narrow">
+            <h2>Development Journey</h2>
+            
+            <div class="narrative-section">
+                <h3>Phase 1: Research & Concept (Weeks 1-3)</h3>
+                <p>
+                    Began with ethnographic research: conducted semi-structured interviews, observed how people discuss their relationships, and analyzed social network visualizations from academia and art. Discovered that existing visualizations felt clinical and disconnected from emotional reality.
+                </p>
+                <p>
+                    Developed three concept directions: (1) abstract data sculpture, (2) collaborative drawing space, (3) tangible network builder. User feedback overwhelmingly favored the tangible approach — people wanted to "feel" their networks through physical placement.
+                </p>
+            </div>
+
+            <div class="full-width-image" style="margin:60px 0;">
+                <div class="image-placeholder" style="background:linear-gradient(135deg, #fa709a 0%, #fee140 100%); height:400px;">
+                    <span>Early Prototypes</span>
+                </div>
+            </div>
+
+            <div class="narrative-section">
+                <h3>Phase 2: Technical Prototyping (Weeks 4-8)</h3>
+                <p>
+                    Built proof-of-concept using Arduino and Processing to validate tracking approach. Tested various object types: RFID tags (too limiting), IR markers (unreliable), and finally settled on color-coded physical tokens tracked via overhead camera.
+                </p>
+                <p>
+                    Migrated to Unity for production system, implementing custom computer vision pipeline. Developed calibration tool allowing installation in spaces with different dimensions and ambient lighting conditions. Achieved 98% tracking accuracy with sub-100ms latency.
+                </p>
+            </div>
+
+            <div class="full-width-image" style="margin:60px 0;">
+                <div class="image-placeholder" style="background:linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); height:400px;">
+                    <span>Technical Setup</span>
+                </div>
+            </div>
+
+            <div class="narrative-section">
+                <h3>Phase 3: Visual & Audio Design (Weeks 9-12)</h3>
+                <p>
+                    Designed lighting behaviors based on network properties: connection density affected brightness, relationship strength controlled color temperature, and network centrality determined pulse frequency. Created 12 distinct light patterns corresponding to different social structures.
+                </p>
+                <p>
+                    Composed generative soundscape using granular synthesis. As users add connections, harmonic layers emerge; removing connections creates dissonance. The sonic environment reflects the health and complexity of the represented network.
+                </p>
+            </div>
+
+            <div class="full-width-image" style="margin:60px 0;">
+                <div class="image-placeholder" style="background:linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); height:400px;">
+                    <span>Audio Visualization</span>
+                </div>
+            </div>
+
+            <div class="narrative-section">
+                <h3>Phase 4: Installation & Exhibition (Weeks 13-14)</h3>
+                <p>
+                    Exhibited at university's Media Arts Festival for two weeks. Over 200 visitors interacted with the installation, spending an average of 8 minutes each — significantly longer than typical interactive art engagement times.
+                </p>
+                <p>
+                    Observed fascinating behaviors: couples built networks together and compared patterns, individuals experimented with different network configurations, and groups returned multiple days to refine their maps. The installation became a conversation starter about digital-age relationships.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details -->
+    <section class="project-section project-bg-dark">
+        <div class="project-container">
+            <h2 class="section-heading" style="color:#fff;">Technical Architecture</h2>
+            <div class="tech-architecture-grid">
+                <div class="tech-layer">
+                    <h4 style="color:#fff;">Input Layer</h4>
+                    <p style="color:#ccc;">Overhead camera (1080p 60fps) → OpenCV blob detection → Position normalization → Kalman filtering for stability</p>
+                </div>
+                <div class="tech-layer">
+                    <h4 style="color:#fff;">Processing Layer</h4>
+                    <p style="color:#ccc;">Network topology analysis → Force-directed graph layout → Centrality calculations → Pattern classification</p>
+                </div>
+                <div class="tech-layer">
+                    <h4 style="color:#fff;">Output Layer</h4>
+                    <p style="color:#ccc;">Particle system rendering → DMX lighting control → Spatial audio generation → Display projection</p>
+                </div>
+            </div>
+            
+            <div class="code-stats" style="margin-top:60px;">
+                <div class="code-stat">
+                    <h3 style="color:#fff;">3,800+</h3>
+                    <p style="color:#ccc;">Lines of C# code</p>
+                </div>
+                <div class="code-stat">
+                    <h3 style="color:#fff;">12</h3>
+                    <p style="color:#ccc;">Custom shaders</p>
+                </div>
+                <div class="code-stat">
+                    <h3 style="color:#fff;">98%</h3>
+                    <p style="color:#ccc;">Tracking accuracy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reception & Impact -->
+    <section class="project-section">
+        <div class="project-container-narrow">
+            <h2>Reception & Impact</h2>
+            <p class="lead-text">
+                The installation received recognition for its innovative approach to making social data tangible and emotionally meaningful. Visitors reported the experience prompted deeper reflection on their relationships and social patterns.
+            </p>
+            
+            <div class="quote-block">
+                <p class="quote-text">"I never realized how central my sister is to my network until I saw it visualized. This made me want to reach out to her more."</p>
+                <p class="quote-attribution">— Exhibition visitor feedback</p>
+            </div>
+
+            <div class="quote-block">
+                <p class="quote-text">"A rare example of technology serving emotional understanding rather than obscuring it. Technically sophisticated yet deeply human."</p>
+                <p class="quote-attribution">— Exhibition Jury Member</p>
+            </div>
+
+            <div class="impact-metrics">
+                <div class="metric-item">
+                    <h3>200+</h3>
+                    <p>Visitors over 2 weeks</p>
+                </div>
+                <div class="metric-item">
+                    <h3>8 min</h3>
+                    <p>Average engagement time</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Best Interactive Work</h3>
+                    <p>Festival Award</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflections -->
+    <section class="project-section project-bg-light">
+        <div class="project-container-narrow">
+            <h2>Reflections</h2>
+            <p>
+                This project taught me that the most compelling interactive experiences emerge from genuine human questions, not technical capabilities. The technology served the concept, not the reverse.
+            </p>
+            <p>
+                If I were to revisit the project, I'd explore machine learning for pattern recognition, enabling the system to identify and name different network types ("close-knit cluster," "hub-and-spoke," etc.). I'd also investigate persistent storage, allowing visitors to save and revisit their networks over time.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Nav -->
+    <section class="project-section">
+        <div class="project-container">
+            <div class="project-nav-footer">
+                <a href="unity-projects.html" class="btn-secondary">← Back to Projects</a>
+                <a href="#" class="btn-primary">Next Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Julie Jancickova. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
