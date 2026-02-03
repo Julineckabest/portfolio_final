@@ -274,6 +274,7 @@ body {
     position: relative;
     overflow: hidden;
     min-height: 400px;
+    max-height: 550px
 }
 
 .project-card::before {
