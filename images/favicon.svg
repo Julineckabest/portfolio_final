@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <!-- Background -->
+  <rect width="16" height="16" fill="#12121f"/>
+
+  <!-- Hair back (long flowing) -->
+  <rect x="4" y="4" width="1" height="8" fill="#b8935a"/>
+  <rect x="4" y="12" width="1" height="3" fill="#b8935a"/>
+  <rect x="11" y="4" width="1" height="7" fill="#b8935a"/>
+  <rect x="11" y="11" width="1" height="3" fill="#b8935a"/>
+  <rect x="12" y="5" width="1" height="5" fill="#9a7a48"/>
+
+  <!-- Neck -->
+  <rect x="7" y="9" width="2" height="2" fill="#e8c09a"/>
+
+  <!-- Body black top -->
+  <rect x="5" y="11" width="6" height="5" fill="#22222e"/>
+  <rect x="4" y="12" width="1" height="4" fill="#22222e"/>
+  <rect x="11" y="12" width="1" height="4" fill="#22222e"/>
+  <rect x="7" y="11" width="2" height="1" fill="#1a1a26"/>
+
+  <!-- Head -->
+  <rect x="5" y="4" width="6" height="5" fill="#e8c09a"/>
+
+  <!-- Hair front -->
+  <rect x="5" y="3" width="6" height="2" fill="#c8a060"/>
+  <rect x="4" y="4" width="1" height="1" fill="#c8a060"/>
+  <rect x="11" y="4" width="1" height="1" fill="#c8a060"/>
+  <rect x="6" y="3" width="2" height="1" fill="#dcc080"/>
+  <rect x="5" y="5" width="1" height="1" fill="#c8a060"/>
+
+  <!-- Eyes -->
+  <rect x="6" y="6" width="1" height="1" fill="#222"/>
+  <rect x="9" y="6" width="1" height="1" fill="#222"/>
+
+  <!-- Eyebrows -->
+  <rect x="6" y="5" width="1" height="1" fill="#9a7a48"/>
+  <rect x="9" y="5" width="1" height="1" fill="#9a7a48"/>
+
+  <!-- Nose subtle -->
+  <rect x="7" y="7" width="1" height="1" fill="#dbb08a"/>
+
+  <!-- Septum ring -->
+  <rect x="7" y="7" width="2" height="1" fill="#d4a080"/>
+
+  <!-- Smile -->
+  <rect x="7" y="8" width="2" height="1" fill="#d06060"/>
+
+  <!-- Gold earring -->
+  <rect x="5" y="7" width="1" height="2" fill="#d4a020"/>
+
+  <!-- Left arm -->
+  <rect x="4" y="13" width="1" height="2" fill="#e8c09a"/>
+  <rect x="3" y="13" width="1" height="2" fill="#e8c09a"/>
+  <!-- Tattoo -->
+  <rect x="3" y="14" width="2" height="1" fill="#5a6a9a"/>
+
+  <!-- Stylus diagonal -->
+  <rect x="2" y="12" width="1" height="1" fill="#e0e0e0"/>
+  <rect x="1" y="11" width="1" height="1" fill="#f5f5f5"/>
+  <rect x="0" y="10" width="1" height="1" fill="#fff"/>
+
+  <!-- Drawing tablet -->
+  <rect x="9" y="13" width="6" height="3" fill="#2e2e3e"/>
+  <rect x="10" y="13" width="4" height="2" fill="#3a3a4e"/>
+  <rect x="10" y="13" width="2" height="1" fill="#6a5acd"/>
+  <rect x="12" y="14" width="1" height="1" fill="#7a6acd"/>
+
+  <!-- Ring on hand -->
+  <rect x="3" y="13" width="1" height="1" fill="#c8c8c8"/>
+</svg>
