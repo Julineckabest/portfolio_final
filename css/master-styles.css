@@ -233,7 +233,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Projects Section on Index */
+/* Projects Section */
 .projects-section {
     padding: 8rem 5rem;
     border-top: 1px solid rgba(212, 197, 176, 0.2);
@@ -256,6 +256,7 @@ body {
     font-weight: 300;
 }
 
+/* Project Cards */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
