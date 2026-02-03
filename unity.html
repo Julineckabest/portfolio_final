@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity & Game Dev - Julie Jancickova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="main-nav">
+    <a href="index.html" class="nav-logo">Julie Jancickova</a>
+    <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="unity.html" class="active">Projects</a>
+        <a href="playground.html">Playground</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- Page header -->
+<header class="page-header">
+    <div class="header-content">
+        <h1 class="page-title">Unity &<br>Game Dev</h1>
+        <p class="page-description">Immersive interactive experiences — from 2D puzzle-platformers to real-time VR simulations</p>
+    </div>
+</header>
+
+<!-- 2-col card grid -->
+<section class="unity-grid">
+
+    <!-- Card 1 – Honours -->
+    <article class="unity-card reveal">
+        <span class="honours-badge">🏆 Honours Project</span>
+        <div class="unity-img" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+            <span class="ph-icon">🥽</span>
+        </div>
+        <div class="unity-card-body">
+            <p class="unity-tag">VR · Unity XR · 2024</p>
+            <h2 class="unity-title">Neural Training VR Simulator</h2>
+            <p class="unity-desc">
+                A cutting-edge VR training platform for medical professionals. Built with Unity XR and Oculus Quest 2, featuring realistic hand tracking, haptic feedback, and AI-driven performance analytics. Achieved 95% gesture-recognition accuracy.
+            </p>
+        </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="unity-card reveal">
+        <div class="unity-img" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+            <span class="ph-icon">🌲</span>
+        </div>
+        <div class="unity-card-body">
+            <p class="unity-tag">Unity 2D · Puzzle Platformer</p>
+            <h2 class="unity-title">Shadowbound</h2>
+            <p class="unity-desc">
+                Dynamic lighting mechanics where shadows become pathways. Players manipulate light sources to solve 30+ handcrafted levels. Custom shader effects for real-time shadow rendering and a built-in level editor for rapid prototyping.
+            </p>
+        </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="unity-card reveal">
+        <div class="unity-img" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+            <span class="ph-icon">🚀</span>
+        </div>
+        <div class="unity-card-body">
+            <p class="unity-tag">Unity 3D · Multiplayer</p>
+            <h2 class="unity-title">Astro Harvest</h2>
+            <p class="unity-desc">
+                Space resource-management meets real-time strategy. Procedural planet generation, Unity Netcode multiplayer co-op, and an economy with 100+ craftable items. Optimised for stable 60 FPS across a range of hardware.
+            </p>
+        </div>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="unity-card reveal">
+        <div class="unity-img" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);">
+            <span class="ph-icon">🏰</span>
+        </div>
+        <div class="unity-card-body">
+            <p class="unity-tag">Unreal Engine 5 · Action</p>
+            <h2 class="unity-title">Forgotten Citadel</h2>
+            <p class="unity-desc">
+                Third-person action-adventure showcase. Combo-based combat, Chaos-physics destructible environments, and Niagara weather effects. Leveraged Nanite and Lumen for photorealistic visuals with modular Blueprint enemy AI.
+            </p>
+        </div>
+    </article>
+
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <p>© 2025 Julie Jancickova · Interactive Designer</p>
+</footer>
+
+<!-- reveal on scroll -->
+<script>
+(function(){
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                io.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>
