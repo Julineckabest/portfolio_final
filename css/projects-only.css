@@ -1,0 +1,976 @@
+/* ══════════════════════════════════════════════════════════════════════
+   PROJECT DETAIL PAGES STYLESHEET (project1-4.html)
+   Swiss Minimalistic Design
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* ── Reset & Base ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ── Navigation ── */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-menu a {
+    font-size: 14px;
+    font-weight: 400;
+    transition: opacity 0.2s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.6;
+}
+
+/* ── Containers ── */
+.project-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.project-container-narrow {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.project-container-wide {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ── Hero Layouts ── */
+
+/* Split Hero (Project 1) */
+.project-hero-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 120px 40px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.project-meta {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.project-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.project-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 32px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 8px 16px;
+    background: #f5f5f5;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Full Hero (Project 2) */
+.project-hero-full {
+    padding-top: 100px;
+}
+
+.project-hero-full-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.project-title-large {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 24px;
+    letter-spacing: -0.03em;
+}
+
+.project-intro-large {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Minimal Hero (Project 3) */
+.project-hero-minimal {
+    padding: 140px 40px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-title-xl {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 32px;
+    letter-spacing: -0.03em;
+}
+
+.project-intro-xl {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #555;
+    max-width: 800px;
+}
+
+/* Narrative Hero (Project 4) */
+.project-hero-narrative {
+    padding: 140px 40px 60px;
+    text-align: center;
+}
+
+.project-title-narrative {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+/* ── Sections ── */
+.project-section {
+    padding: 80px 0;
+}
+
+.project-bg-light {
+    background: #fafafa;
+}
+
+.project-bg-dark {
+    background: #111;
+    color: #fff;
+}
+
+.section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+/* ── Grids ── */
+.project-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.project-grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.project-grid-4col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* ── Process Steps ── */
+.process-step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.process-step-reverse {
+    direction: rtl;
+}
+
+.process-step-reverse > * {
+    direction: ltr;
+}
+
+.process-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.process-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.process-content ul {
+    margin: 16px 0;
+    padding-left: 20px;
+}
+
+.process-content li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* ── Timeline (Project 2) ── */
+.timeline-vertical {
+    position: relative;
+    padding-left: 80px;
+}
+
+.timeline-vertical::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #ddd;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.timeline-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.timeline-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+/* ── Visual Elements ── */
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.full-width-image {
+    margin: 40px 0;
+}
+
+.visual-caption {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+}
+
+/* ── Masonry Grid (Project 3) ── */
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    grid-auto-rows: 240px;
+}
+
+.masonry-item {
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.masonry-tall {
+    grid-row: span 2;
+}
+
+/* ── Dual Layout (Project 4) ── */
+.dual-image-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.full-width-visual {
+    width: 100%;
+    margin: 60px 0;
+}
+
+/* ── Design System (Project 3) ── */
+.system-section {
+    margin-bottom: 60px;
+}
+
+.system-section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
+}
+
+.color-palette-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.color-swatch {
+    aspect-ratio: 1;
+    border-radius: 2px;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+}
+
+.color-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.color-name {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.color-hex {
+    font-size: 11px;
+    font-family: 'Courier New', monospace;
+    opacity: 0.8;
+}
+
+.typography-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.type-sample {
+    padding: 32px;
+    background: #fafafa;
+    border-radius: 2px;
+}
+
+.type-sample p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+/* ── Content Blocks ── */
+.lead-text {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 32px;
+}
+
+.lead-text-xl {
+    font-size: 28px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 400;
+}
+
+.project-overview-centered {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-overview-centered h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.project-outcome-centered {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-outcome-centered h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.project-outcome-text {
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.project-outcome-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ── Stats ── */
+.stat-card {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #999;
+}
+
+.project-stats-inline {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.stat-inline {
+    text-align: center;
+}
+
+.stat-inline h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stat-inline p {
+    font-size: 13px;
+    color: #999;
+}
+
+/* ── Technical Cards ── */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.tech-card {
+    padding: 32px;
+    background: #fafafa;
+    border-radius: 2px;
+}
+
+.tech-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.tech-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.tech-card strong {
+    font-weight: 600;
+}
+
+.tech-architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.tech-layer {
+    padding: 32px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 2px;
+}
+
+.tech-layer h4 {
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.tech-layer p {
+    color: #ccc;
+}
+
+.code-stats {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+}
+
+.code-stat {
+    text-align: center;
+}
+
+.code-stat h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.code-stat p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* ── Process Cards ── */
+.process-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.process-card {
+    padding: 32px 24px;
+    background: #fafafa;
+    border-radius: 2px;
+}
+
+.process-number {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.process-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.process-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* ── Challenge/Solution Layout ── */
+.challenge-solution-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.challenge-col h2,
+.solution-col h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+.challenge-col p,
+.solution-col p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.challenge-col ul,
+.solution-col ul {
+    margin: 16px 0;
+    padding-left: 20px;
+}
+
+.challenge-col li,
+.solution-col li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* ── Narrative Sections ── */
+.narrative-section {
+    margin-bottom: 60px;
+}
+
+.narrative-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+.narrative-section p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ── Quotes ── */
+.testimonial {
+    margin-top: 48px;
+    padding: 40px;
+    background: #fafafa;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.testimonial-text {
+    font-size: 20px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.testimonial-author {
+    font-size: 13px;
+    font-weight: 600;
+    color: #999;
+}
+
+.quote-block {
+    margin: 40px 0;
+    padding: 32px;
+    border-left: 3px solid #000;
+    background: #fafafa;
+}
+
+.quote-text {
+    font-size: 20px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.quote-attribution {
+    font-size: 13px;
+    font-weight: 600;
+    color: #999;
+}
+
+.impact-metrics {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 48px;
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-item h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.metric-item p {
+    font-size: 13px;
+    color: #999;
+}
+
+/* ── Footer Navigation ── */
+.project-nav-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 16px 32px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #000;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #333;
+}
+
+.btn-secondary {
+    background: #f5f5f5;
+    color: #000;
+}
+
+.btn-secondary:hover {
+    background: #e5e5e5;
+}
+
+/* ── Footer ── */
+.footer {
+    padding: 60px 40px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #999;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 1024px) {
+    .project-hero-split,
+    .process-step,
+    .timeline-content-wrapper,
+    .project-grid-2col,
+    .dual-image-layout,
+    .challenge-solution-layout,
+    .typography-showcase {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .process-step-reverse {
+        direction: ltr;
+    }
+
+    .project-grid-3col,
+    .masonry-grid,
+    .tech-grid,
+    .tech-architecture-grid,
+    .process-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid-4col,
+    .color-palette-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-title-large {
+        font-size: 48px;
+    }
+
+    .project-title-xl {
+        font-size: 54px;
+    }
+
+    .project-title-narrative {
+        font-size: 54px;
+    }
+
+    .timeline-vertical {
+        padding-left: 0;
+    }
+
+    .timeline-vertical::before {
+        display: none;
+    }
+
+    .timeline-marker {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .code-stats,
+    .project-stats-inline,
+    .impact-metrics {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 20px 24px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+        font-size: 13px;
+    }
+
+    .project-container,
+    .project-container-narrow,
+    .project-container-wide {
+        padding: 0 24px;
+    }
+
+    .project-section {
+        padding: 60px 0;
+    }
+
+    .project-hero-split {
+        padding: 100px 24px 60px;
+    }
+
+    .project-hero-minimal {
+        padding: 120px 24px 60px;
+    }
+
+    .project-hero-narrative {
+        padding: 120px 24px 60px;
+    }
+
+    .project-title {
+        font-size: 36px;
+    }
+
+    .project-title-large {
+        font-size: 36px;
+    }
+
+    .project-title-xl {
+        font-size: 40px;
+    }
+
+    .project-title-narrative {
+        font-size: 40px;
+    }
+
+    .lead-text-xl {
+        font-size: 20px;
+    }
+
+    .section-heading {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .project-grid-4col,
+    .color-palette-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-nav-footer {
+        flex-direction: column;
+        gap: 16px;
+        padding: 40px 0;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-intro {
+        font-size: 16px;
+    }
+
+    .project-intro-large,
+    .project-intro-xl {
+        font-size: 18px;
+    }
+
+    .project-tags {
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
