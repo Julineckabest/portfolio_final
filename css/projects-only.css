@@ -3,6 +3,12 @@
    Swiss Minimalistic Design
    ══════════════════════════════════════════════════════════════════════ */
 
+   :root {
+    --black: #000;
+    --white: #fff;
+    --beige: #d4c5b0;
+    --gray: #666;
+        } 
 /* ── Reset & Base ── */
 * {
     margin: 0;
