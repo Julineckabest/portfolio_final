@@ -692,6 +692,37 @@ img { display: block; max-width: 100%; }
 }
 .detail-back:hover { color: var(--white); gap: 1rem; }
 
+.unity-img-with-photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.unity-img-with-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.unity-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease;
+}
+
+.unity-card:hover .unity-img-with-photo img {
+    transform: scale(1.05);
+}
+
+.unity-card:hover .unity-img-overlay {
+    opacity: 0;
+}
+
 /* ============================================================
    SHARED FOOTER  (index, ux, unity, detail)
    ============================================================ */
