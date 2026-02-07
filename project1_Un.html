@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Case Study – Julie Jancickova</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/projects-only.css">
+</head>
+<body>
+
+    <!-- Nav -->
+<nav class="main-nav">
+    <a href="index.html" class="nav-logo">Julie Jancickova</a>
+    <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="ux.html" class="active">Projects</a>
+        <a href="beyond.html">Beyond</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+    <!-- Full-Width Hero -->
+    <section class="project-hero-full">
+        <div class="project-hero-full-content">
+            <p class="project-meta">Unity · VR Experience · 2023</p>
+            <h1 class="project-title-large">Museum of Lost Memories</h1>
+            <p class="project-intro-large">
+                An immersive VR experience exploring the fragility of memory through interactive environments and spatial audio. Built in Unity using XR Interaction Toolkit for Meta Quest 2.
+            </p>
+        </div>
+        <div class="full-width-image">
+            <div class="image-placeholder" style="background:linear-gradient(135deg, #434343 0%, #000000 100%); height:600px;">
+                <span>VR Environment Screenshot</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="project-container">
+            <div class="project-overview-centered">
+                <h2>Project Overview</h2>
+                <p class="lead-text">
+                    This experimental VR project explores how virtual spaces can evoke emotional responses through environmental storytelling and non-linear narrative structures. Players navigate fragmented memories represented as shifting architectural spaces.
+                </p>
+            </div>
+            <div class="project-grid-3col" style="margin-top:60px;">
+                <div>
+                    <h4>Role</h4>
+                    <p>Lead Developer, Environment Designer, Sound Designer</p>
+                </div>
+                <div>
+                    <h4>Duration</h4>
+                    <p>6 months (Jan – Jun 2023)</p>
+                </div>
+                <div>
+                    <h4>Team</h4>
+                    <p>Solo project with mentor support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vertical Timeline Process -->
+    <section class="project-section project-bg-light">
+        <div class="project-container">
+            <h2 class="section-heading">Development Journey</h2>
+            
+            <div class="timeline-vertical">
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">01</div>
+                    <div class="timeline-content-wrapper">
+                        <div class="timeline-content">
+                            <h3>Concept & Research</h3>
+                            <p>Researched spatial memory theories and architectural phenomenology. Studied how physical spaces trigger emotional recall through materiality, lighting, and spatial proportions.</p>
+                            <p>Key references: "The Poetics of Space" by Bachelard, memory palace techniques, and existing VR narrative experiences like "The Line" and "Dear Esther VR".</p>
+                        </div>
+                        <div class="timeline-image">
+                            <div class="image-placeholder" style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); height:300px;">
+                                <span>Concept Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">02</div>
+                    <div class="timeline-content-wrapper">
+                        <div class="timeline-content">
+                            <h3>Prototyping & Mechanics</h3>
+                            <p>Built core interaction systems: object manipulation using XR Grab Interactables, teleportation locomotion with comfort vignette, and spatial audio triggers. Implemented procedural dissolution effect for transitioning between memory states.</p>
+                            <p>Created modular room system allowing dynamic environment reconfiguration based on player's emotional state (measured via interaction patterns and dwelling time in spaces).</p>
+                        </div>
+                        <div class="timeline-image">
+                            <div class="image-placeholder" style="background:linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height:300px;">
+                                <span>Prototypes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">03</div>
+                    <div class="timeline-content-wrapper">
+                        <div class="timeline-content">
+                            <h3>Environment Design</h3>
+                            <p>Designed five distinct memory environments: childhood bedroom, library, garden, hospital corridor, and abstract void space. Each environment uses specific color palettes, lighting schemes, and material properties to evoke different emotional tones.</p>
+                            <p>Implemented dynamic lighting system responding to player position and interaction. Used Unity's URP with custom shaders for stylized rendering optimized for Quest 2 performance constraints.</p>
+                        </div>
+                        <div class="timeline-image">
+                            <div class="image-placeholder" style="background:linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height:300px;">
+                                <span>Environment Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">04</div>
+                    <div class="timeline-content-wrapper">
+                        <div class="timeline-content">
+                            <h3>Audio & Atmosphere</h3>
+                            <p>Designed layered soundscape using FMOD integration. Created 3D spatialized ambient loops, triggered sound effects, and subtle musical motifs that shift based on player location and story progression.</p>
+                            <p>Recorded custom foley for object interactions to enhance tactile feel. Implemented reverb zones matching each environment's acoustic properties (tight reverb for bedroom, expansive for void space).</p>
+                        </div>
+                        <div class="timeline-image">
+                            <div class="image-placeholder" style="background:linear-gradient(135deg, #fa709a 0%, #fee140 100%); height:300px;">
+                                <span>Sound Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">05</div>
+                    <div class="timeline-content-wrapper">
+                        <div class="timeline-content">
+                            <h3>Testing & Iteration</h3>
+                            <p>Conducted 15 playtesting sessions with participants unfamiliar with VR and experienced VR users. Gathered feedback on comfort, narrative clarity, and emotional impact.</p>
+                            <p>Major iterations: reduced locomotion speed by 30% to minimize motion sickness, added more environmental storytelling cues, simplified object interaction zones, and refined pacing between memory transitions.</p>
+                        </div>
+                        <div class="timeline-image">
+                            <div class="image-placeholder" style="background:linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); height:300px;">
+                                <span>Playtesting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Deep Dive -->
+    <section class="project-section">
+        <div class="project-container">
+            <h2 class="section-heading">Technical Implementation</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h4>XR Interaction System</h4>
+                    <p>Custom interaction framework built on Unity XR Interaction Toolkit. Implemented grab, push, and gesture-based interactions with haptic feedback calibrated for Quest 2 controllers.</p>
+                    <p><strong>Tools:</strong> C#, XR Toolkit, Oculus Integration SDK</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Performance Optimization</h4>
+                    <p>Maintained steady 72fps on Quest 2 through aggressive LOD systems, occlusion culling, texture atlasing, and baked lighting. Draw calls kept under 120 per frame.</p>
+                    <p><strong>Techniques:</strong> URP optimization, mesh combining, shader LOD</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Procedural Systems</h4>
+                    <p>Built dissolve shader using noise textures for memory fragmentation effect. Created scriptable object-based room configuration system for easy environment authoring.</p>
+                    <p><strong>Tools:</strong> Shader Graph, ScriptableObjects, Unity Events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Width Showcase -->
+    <section class="project-section project-bg-dark">
+        <div class="project-container-wide">
+            <div class="full-width-image">
+                <div class="image-placeholder" style="background:linear-gradient(135deg, #434343 0%, #000000 100%); height:600px;">
+                    <span>Gameplay Screenshot</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="project-section">
+        <div class="project-container">
+            <div class="project-outcome-centered">
+                <h2>Impact & Recognition</h2>
+                <p class="lead-text">
+                    Selected for showcase at university end-of-year exhibition. Received Distinction grade and recognition for innovative use of VR as an emotional storytelling medium.
+                </p>
+                <div class="project-stats-inline">
+                    <div class="stat-inline">
+                        <h3>15</h3>
+                        <p>Playtesters</p>
+                    </div>
+                    <div class="stat-inline">
+                        <h3>6</h3>
+                        <p>Months Development</p>
+                    </div>
+                    <div class="stat-inline">
+                        <h3>5</h3>
+                        <p>Unique Environments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Nav -->
+    <section class="project-section project-bg-light">
+        <div class="project-container">
+            <div class="project-nav-footer">
+                <a href="unity-projects.html" class="btn-secondary">← Back to Projects</a>
+                <a href="#" class="btn-primary">Next Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Julie Jancickova. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
