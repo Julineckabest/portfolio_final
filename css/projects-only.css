@@ -236,11 +236,12 @@ ul {
 
 .project-bg-light {
     background: #fafafa;
+    color: black;
 }
 
 .project-bg-dark {
     background: #111;
-    color: #fff;
+    color: #ffffff;
 }
 
 .section-heading {
