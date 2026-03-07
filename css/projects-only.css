@@ -443,7 +443,7 @@ ul {
 }
 
 .color-swatch {
-    aspect-ratio: 1;
+    aspect-ratio: auto;
     border-radius: 2px;
     display: flex;
     align-items: flex-end;
