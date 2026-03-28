@@ -149,6 +149,21 @@
             The initial search for third-party assets includes assets in the FAB digital marketplace.
             The scope was slightly ambitious for the time scale and budget.
             </p>
+            <p>After establishing the primary focus and completing the pre-production document, I began by creating the first Level of the scene using a downloaded abandoned factory asset.
+I decided to create the main scene on a single level, redesigning the asset pack and adding a landscape where the player can walk up to the building from outside. After establishing the building's Level, I added the landscape with ground/stone/dirt materials and painted it over, reshaping it to make it less flat and adding the lake.
+The prior focus during the first stage of development was to create an atmosphere and a landscape for the deserted colour scheme (brown-orange).
+The atmosphere was changed by post-volume, sky atmo, and colour changes in directional lights. This part was changed several times during the process because I could not find anything suitable that looked realistic.
+After several tries, I added an HDRI backdrop, but it only worsened the lag during the simulation, and the effect was undesirable.
+In the beginning stages, the simulation ran very slowly, with lag and a message about "Video Memory is exhausted about 100MB -1GB." This issue was resolved by changing the project scalability from EPIC to MEDIUM (even High caused some issues, especially with assets such as trees).
+Lowering Scalability influenced the overall quality of the assets and the final lighting.
+The character navigates with WASD and JUMP keyboard keys, or selects the object with the E key (red ArmLenght grabs the object). The object appears on the screen with text or disappears, and some trigger the sound effect on click. Inside the abandoned building are three trigger objects (including one Mixamo animated character of a dying person that would appear text on the screen). This should simulate the scene that helps understand the situation (the character mentioning "finding them").</p>
+<p>I added a second level of the underground cave to demonstrate travel between levels and add another location. The idea of the Mixano creature should simulate the villain who would be there to fight (this part wasn't included in scope for its complexity), so there is only a Mixamo character with animation to theat the player.
+During this part, the project file contained a corrupt asset, and the whole UProject seemed to be in danger of not surviving. By finding the line of text, I managed to remove it from the assets folder. During this period, I also added the Clean Project Plugin to delete unused assets, as the folder was getting too large.
+In the second stage, I decided to add at least some UI elements to support the player's POV as a static image over the screen - I used the knowledge I had learned to use the Canva Panel during the finalisation of the PNG images in Adobe Illustrator (the design is only to support the idea, not the final intended design of lifebar/inventory).
+I decided to make the trigger clicking more blueprints of buttons and pop-up windows (Canva panels) that simulate inventory and lifebar mechanics. As it worked well, I added an Introduction Panel with information for the player before the game starts. The time constraints did not allow me to add sophisticated methodologies, so the shown mechanics are intended solely as a prototype.
+This also clashed with the returning action, coming from the Cave level back to the Main Level. For that purpose, I created a third level (duplicated the first one) to create the Level BACK (with updated inventory, lifebar (no low energy as at the start), and without popping up the Introduction panel, the environment is identical.
+The last Level also got a perfume as an object for collection and a changed inventory pop-up window.
+The sound effects were mostly free copy from Pixabay and two AI-generated sources for the soundtrack ( ProducerAI, DeScript - reading out my script from the radio). Most of the sound effects were customised (cut or sped up) in REAPER software.</p>
             </div>  
     </section> 
 
