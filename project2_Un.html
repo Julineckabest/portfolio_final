@@ -139,34 +139,34 @@
 
 
 
-<!-- Color & Typography System -->
-    <section class="project-section project-bg-light">
-        <div class="project-container">
-            <h2 class="section-heading">Design System</h2>
-            
-           <p> The main goal of the project was to create a prototype from a first-person POV in a described game theme, with triggers, sound effects, and an algorithm, using an engine that will work as a lifebar (the player can gain or lose their overall well-being).
-            The environment was supposed to be an abandoned building in the middle of the forest, using post-apocalyptic assets to demonstrate negligence and the catastrophe that had happened in the past.
-            The initial search for third-party assets includes assets in the FAB digital marketplace.
-            The scope was slightly ambitious for the time scale and budget.
-            </p>
-            <p>After establishing the primary focus and completing the pre-production document, I began by creating the first Level of the scene using a downloaded abandoned factory asset.
-I decided to create the main scene on a single level, redesigning the asset pack and adding a landscape where the player can walk up to the building from outside. After establishing the building's Level, I added the landscape with ground/stone/dirt materials and painted it over, reshaping it to make it less flat and adding the lake.
-The prior focus during the first stage of development was to create an atmosphere and a landscape for the deserted colour scheme (brown-orange).
-The atmosphere was changed by post-volume, sky atmo, and colour changes in directional lights. This part was changed several times during the process because I could not find anything suitable that looked realistic.
-After several tries, I added an HDRI backdrop, but it only worsened the lag during the simulation, and the effect was undesirable.
-In the beginning stages, the simulation ran very slowly, with lag and a message about "Video Memory is exhausted about 100MB -1GB." This issue was resolved by changing the project scalability from EPIC to MEDIUM (even High caused some issues, especially with assets such as trees).
-Lowering Scalability influenced the overall quality of the assets and the final lighting.
-The character navigates with WASD and JUMP keyboard keys, or selects the object with the E key (red ArmLenght grabs the object). The object appears on the screen with text or disappears, and some trigger the sound effect on click. Inside the abandoned building are three trigger objects (including one Mixamo animated character of a dying person that would appear text on the screen). This should simulate the scene that helps understand the situation (the character mentioning "finding them").</p>
-<p>I added a second level of the underground cave to demonstrate travel between levels and add another location. The idea of the Mixano creature should simulate the villain who would be there to fight (this part wasn't included in scope for its complexity), so there is only a Mixamo character with animation to theat the player.
-During this part, the project file contained a corrupt asset, and the whole UProject seemed to be in danger of not surviving. By finding the line of text, I managed to remove it from the assets folder. During this period, I also added the Clean Project Plugin to delete unused assets, as the folder was getting too large.
-In the second stage, I decided to add at least some UI elements to support the player's POV as a static image over the screen - I used the knowledge I had learned to use the Canva Panel during the finalisation of the PNG images in Adobe Illustrator (the design is only to support the idea, not the final intended design of lifebar/inventory).
-I decided to make the trigger clicking more blueprints of buttons and pop-up windows (Canva panels) that simulate inventory and lifebar mechanics. As it worked well, I added an Introduction Panel with information for the player before the game starts. The time constraints did not allow me to add sophisticated methodologies, so the shown mechanics are intended solely as a prototype.
-This also clashed with the returning action, coming from the Cave level back to the Main Level. For that purpose, I created a third level (duplicated the first one) to create the Level BACK (with updated inventory, lifebar (no low energy as at the start), and without popping up the Introduction panel, the environment is identical.
-The last Level also got a perfume as an object for collection and a changed inventory pop-up window.
-The sound effects were mostly free copy from Pixabay and two AI-generated sources for the soundtrack ( ProducerAI, DeScript - reading out my script from the radio). Most of the sound effects were customised (cut or sped up) in REAPER software.</p>
-            </div>  
-    </section> 
+<!-- Overview -->
+<section class="project-section project-bg-light">
+    <div class="project-container">
+        <h2 class="section-heading">Development Process</h2>
+        
+        <p>The main goal was to create a first-person prototype in Unreal Engine with interactive triggers, sound effects, and a dynamic health system that tracks the player's well-being. The environment is an abandoned building in the middle of a forest, using post-apocalyptic assets to convey negligence and past catastrophe. I sourced third-party assets from the FAB digital marketplace. The scope was ambitious for the timeframe and budget, but I was determined to push it.</p>
 
+        <p>After establishing the primary focus and completing the pre-production document, I started building Level 1 using a downloaded abandoned factory asset pack. I redesigned the asset pack and added a landscape where players could walk up to the building from outside. Once the building's interior was set, I created the landscape with ground, stone, and dirt materials, painted textures, reshaped the terrain to add variation, and included a lake.</p>
+
+        <p>The first development stage focused on creating atmosphere through a deserted color scheme (brown-orange tones). I adjusted the atmosphere using post-process volumes, sky atmosphere settings, and directional light color changes. This part required several iterations—nothing looked quite right or realistic enough. I tried adding an HDRI backdrop, but it worsened the lag and didn't achieve the desired effect.</p>
+
+        <p>Early on, the simulation ran very slowly with significant lag and "Video Memory exhausted" warnings (100MB-1GB). I resolved this by lowering project scalability from EPIC to MEDIUM (even HIGH caused issues, especially with tree assets). This affected overall asset quality and final lighting, but it was necessary for performance.</p>
+
+        <p>The character navigates using WASD and JUMP keys, and interacts with objects using the E key (a red arm-length sphere indicates grabbable objects). Objects trigger on-screen text or disappear, and some play sound effects on click. Inside the building are three interactive triggers, including a Mixamo-animated dying character that displays text. This simulates the backstory and helps players understand the situation (the character mentions "finding them").</p>
+
+        <p>I added a second underground cave level to demonstrate level transitions and provide another location. The Mixamo creature was intended to simulate a villain encounter (though fighting mechanics weren't included due to complexity), so there's only an animated character to threaten the player.</p>
+
+        <p>During this phase, the project file contained a corrupt asset that nearly destroyed the entire UProject. I managed to locate and remove the problematic line of text from the assets folder. I also added the Clean Project Plugin to delete unused assets, as the folder was growing too large.</p>
+
+        <p>In the second stage, I added UI elements to support the player's POV—static images overlaid on screen. I used Canvas Panels to display PNG images finalized in Adobe Illustrator. The design is basic, intended to support the prototype concept rather than represent final UI/UX for the lifebar and inventory.</p>
+
+        <p>I expanded the trigger system using Blueprint buttons and pop-up windows (Canvas panels) to simulate inventory and lifebar mechanics. Once this worked well, I added an Introduction Panel with player instructions before the game starts. Time constraints prevented sophisticated implementation, so the mechanics shown are prototype-level only.</p>
+
+        <p>This created a challenge: returning from the Cave level back to the Main level. To solve this, I created a third level (duplicating the first) called "Level BACK" with an updated inventory, restored lifebar (no low energy like at the start), and no Introduction panel. The environment remains identical. This final level also includes a perfume collectible and a modified inventory pop-up window.</p>
+
+        <p>Sound effects came mostly from Pixabay's free library, plus two AI-generated sources for the soundtrack (ProducerAI and Descript for radio script narration). Most sound effects were customized—cut or sped up—in REAPER software.</p>
+    </div>  
+</section>
     <!-- Applications Grid -->
     <section class="project-section">
         <div class="project-container-wide">
