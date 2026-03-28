@@ -120,6 +120,16 @@ img { display: block; max-width: 100%; }
     width: 100%;
 }
 
+.skill-item i {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+/* If you want monochrome (your beige color) */
+.skill-item i:not(.colored) {
+    color: var(--beige);
+}
+
 /* ============================================================
    INDEX  –  hero
    ============================================================ */
