@@ -1376,6 +1376,7 @@ img { display: block; max-width: 100%; }
 .cv-tool-icon svg { width: 100%; height: 100%; }
 
 .cv-tool-name {
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: .82rem;
     font-weight: 500;
     letter-spacing: .04em;
