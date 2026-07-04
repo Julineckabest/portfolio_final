@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects – Julie Jancickova</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="stylesheet" href="css/style5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="nav">
-        <a href="index.html" class="logo">Julie Jancickova</a>
-        <ul class="nav-menu">
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="beyond.html">Beyond</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="main-nav">
+        <a href="index.html" class="nav-logo">Julie Jancickova</a>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="beyond.html">Beyond</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
 
     <!-- Page Header -->
@@ -26,93 +29,127 @@
         <div class="header-content">
             <h1 class="page-title">Projects</h1>
             <p class="page-description">
-                Explore my work across UX design and game development. 
-                Choose your path below.
+                Human-centered design across mobile, web, and immersive experiences.
             </p>
         </div>
     </header>
 
-    <!-- Projects Selection -->
-    <main class="projects-hub">
-        
-        <div class="hub-container">
+    <!-- Projects Listing -->
+    <main class="listing-section">
 
-            <!-- UX Projects Card -->
-            <a href="ux1.html" class="hub-card">
-                <div class="hub-card-visual">
-                    <div class="hub-visual-placeholder" style="background-image: url('images/Mockuuups\ Free\ Walking\ with\ iPhone\ X\ mockup.jpeg');background-size: cover; background-position: right center;">
-                        
-                    </div>
+        <!-- Project 1: Silent Disco App -->
+        <article class="listing-card reveal">
+            <div class="listing-image">
+                <div class="img-placeholder" style="background-image: url('images/Projects/Ux-SilDiscoApp/Banner2.png'); background-size: cover; background-position: center;">
                 </div>
-                <div class="hub-card-content">
-                    <div class="hub-category">UX/UI Design</div>
-                    <h2 class="hub-title">UX Projects</h2>
-                    <p class="hub-description">
-                        User experience design, interface design, and product strategy. 
-                        Creating intuitive digital experiences through research, 
-                        prototyping, and iterative design.
-                    </p>
-                    <div class="hub-stats">
-                        <span class="hub-stat">1 Project</span>
-                        <span class="hub-stat-separator">•</span>
-                        <span class="hub-stat">Web & Mobile</span>
-                    </div>
-                    <div class="hub-arrow">
-                        <span>→</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Unity/Game Dev Projects Card -->
-            <a href="unity.html" class="hub-card">
-                <div class="hub-card-visual">
-                    <div class="hub-visual-placeholder" style="background-image: url('images/Projects/VR_baby/Screenshot\ 2026-03-29\ 163318.png'); background-size: cover; background-position: center;">
-                        
-                    </div>
-                </div>
-                <div class="hub-card-content">
-                    <div class="hub-category">Interactive Media</div>
-                    <h2 class="hub-title">Unity & Game Development</h2>
-                    <p class="hub-description">
-                        Interactive experiences, game development, and immersive storytelling. 
-                        Building engaging worlds with Unity, Unreal Engine, and 
-                        cutting-edge game technologies.
-                    </p>
-                    <div class="hub-stats">
-                        <span class="hub-stat">4 Projects</span>
-                        <span class="hub-stat-separator">•</span>
-                        <span class="hub-stat">Unity 3D/VR & Unreal</span>
-                    </div>
-                    <div class="hub-arrow">
-                        <span>→</span>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-        <!-- Optional: Quick Stats Section -->
-        <div class="hub-stats-section">
-            <div class="hub-stat-item">
-                <h3 class="stat-number">5+</h3>
-                <p class="stat-label">Total Projects</p>
             </div>
-            <div class="hub-stat-item">
-                <h3 class="stat-number">2</h3>
-                <p class="stat-label">Disciplines</p>
+            <div class="listing-content">
+                <p class="listing-meta">UX Design · Mobile App</p>
+                <h2 class="listing-heading">Silent Disco App</h2>
+                <p class="listing-paragraph">
+                    A mobile festival experience designed through user research, paper prototyping, and iterative Figma design.
+                    The app creates social connection at music events through inclusive, accessible UX — addressing noise pollution
+                    while enabling virtual dance communities.
+                </p>
+                <a href="project2.html" class="detail-back" style="margin-top:2rem;">View full project →</a>
             </div>
-            <div class="hub-stat-item">
-                <h3 class="stat-number">4+</h3>
-                <p class="stat-label">Years Experience</p>
+        </article>
+
+        <!-- Project 2: VR Parenting Simulator -->
+        <article class="listing-card reveal">
+            <div class="listing-image">
+                <div class="img-placeholder" style="background-image: url('images/Projects/VR_baby/Screenshot 2026-03-29 163318.png'); background-size: cover; background-position: center;">
+                </div>
             </div>
-        </div>
+            <div class="listing-content">
+                <p class="listing-meta">VR UX Research · Interaction Design</p>
+                <h2 class="listing-heading">VR Parenting Simulator</h2>
+                <p class="listing-paragraph">
+                    Research-driven VR experience exploring empathy-building through immersive interaction design.
+                    10 playtesting sessions with diverse participants informed iterative design decisions,
+                    testing whether naturalistic interactions could create genuine emotional engagement.
+                </p>
+                <a href="project1_Un.html" class="detail-back" style="margin-top:2rem;">View full project →</a>
+            </div>
+        </article>
+
+        <!-- Project 3: Homebound -->
+        <article class="listing-card reveal">
+            <div class="listing-image">
+                <div class="img-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+                    <span class="ph-icon" style="font-size:4rem; opacity:0.4;">◈</span>
+                </div>
+            </div>
+            <div class="listing-content">
+                <p class="listing-meta">Game UX · Narrative Design</p>
+                <h2 class="listing-heading">Homebound: Lost Signals</h2>
+                <p class="listing-paragraph">
+                    A post-apocalyptic narrative experience built on Unreal Engine 5. Focused on player-centred storytelling
+                    and environmental communication — designing survival mechanics that convey information through the
+                    game world itself rather than conventional UI overlays.
+                </p>
+                <a href="project2_Un.html" class="detail-back" style="margin-top:2rem;">View full project →</a>
+            </div>
+        </article>
+
+        <!-- Project 4: Dottyvile -->
+        <article class="listing-card reveal">
+            <div class="listing-image">
+                <div class="img-placeholder" style="background-image: url('images/Projects/Dottyville/hero pic (1).png'); background-size: cover; background-position: center;">
+                </div>
+            </div>
+            <div class="listing-content">
+                <p class="listing-meta">Interactive Experience · Historical UX</p>
+                <h2 class="listing-heading">Dottyvile 3D Environment</h2>
+                <p class="listing-paragraph">
+                    An educational 3D reconstruction of Craiglockhart's WWI hospital campus. The project balances
+                    historical accuracy with interactive engagement, designing exploration flows that invite discovery
+                    and contextual learning within a spatial environment.
+                </p>
+                <a href="project3_Un.html" class="detail-back" style="margin-top:2rem;">View full project →</a>
+            </div>
+        </article>
+
+        <!-- Project 5: Under the Ocean -->
+        <article class="listing-card reveal">
+            <div class="listing-image">
+                <div class="img-placeholder" style="background-image: url('images/Projects/Ocean/Exhibition plan.png'); background-size: cover; background-position: center;">
+                </div>
+            </div>
+            <div class="listing-content">
+                <p class="listing-meta">Spatial UX · Virtual Exhibition Design</p>
+                <h2 class="listing-heading">Under the Ocean Exhibition</h2>
+                <p class="listing-paragraph">
+                    An immersive 3D virtual exhibition exploring ocean ecosystems. Designed as an interactive space
+                    where visitors can explore, learn, and engage with the environment — combining curatorial UX
+                    thinking with real-time 3D interaction.
+                </p>
+                <a href="project4_Un.html" class="detail-back" style="margin-top:2rem;">View full project →</a>
+            </div>
+        </article>
 
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Julie Jancickova. All rights reserved.</p>
+    <footer class="site-footer">
+        <p>© 2026 Julie Jancickova · UX Designer</p>
     </footer>
+
+    <!-- Reveal on scroll -->
+    <script>
+    (function(){
+        const reveals = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(el => io.observe(el));
+    })();
+    </script>
 
 </body>
 </html>
